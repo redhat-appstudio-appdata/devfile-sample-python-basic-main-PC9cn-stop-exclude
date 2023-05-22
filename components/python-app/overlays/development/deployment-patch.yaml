@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-app
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/gbenhaim-tenant/devfile-sample-python-basic-main/python-app@sha256:98667da57e533d49a19f694357bc4538e55ae0aecde973e92f42ec39d82e54cd
+        name: my-python
+        resources: {}
+status: {}
